@@ -10,6 +10,7 @@ const searchUsername = (users, username) => users.find(user => user.username ===
 const longWinded = (users) => users.sort((a, b) => b.bio.length - a.bio.length)[0];
 
 const follower = (users) => users.sort((a, b) => a.followers - b.followers);
+// const follower = (users) => users.sort((a, b) => a.followers <= b.followers ? -1 : 1); // Raffy's
 
 const users = [
     { name: 'Reuben O.',
